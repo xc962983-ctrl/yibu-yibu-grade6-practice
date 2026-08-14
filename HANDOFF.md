@@ -53,16 +53,16 @@ npm run build
 ## Git / Sites 状态
 
 - 当前本地分支：`main`
-- 最近项目提交：`feee052`（三科教材中心版本）
+- 最近项目提交：`a5f677f`（README）和 `e45b2cc`（交接说明）；核心功能版本为 `feee052`。
 - `.openai/hosting.json` 已保存 Sites 项目配置。
 - Sites 已保存一个可部署版本，但因为当前环境不支持外部邮箱访客邀请，所以没有部署成父母可访问的私有链接。
-- 当前 `origin` 是临时 Sites 源码仓库，不是 GitHub 仓库；发布到 GitHub 时应新建独立仓库，不要使用 `byoungd/up`。
+- GitHub 已创建公开仓库：`https://github.com/xc962983-ctrl/yibu-yibu-grade6-practice`。仓库内有 README、此交接文件和完整源文件压缩包；本地 `origin` 仍是临时 Sites 源码仓库，不要把 `byoungd/up` 当作目标仓库。
 
 ## 下一位 Codex 的建议工作顺序
 
-1. 获取用户的 GitHub 用户名和新仓库地址，或让用户先创建一个空仓库。
-2. 检查 `git status -sb`，确认只包含本项目文件。
-3. 将当前 `main` 推送到独立 GitHub 仓库。
+1. 从 GitHub 仓库下载 `yibu-yibu-grade6-practice-source.tar.gz`，解压到工作目录。
+2. 检查 `git status -sb` 和 `npm test`，确认交接包可运行。
+3. 如需持续开发，先把本地 `origin` 改成 GitHub 仓库地址，再按用户要求提交代码。
 4. 使用 GitHub Actions 构建并发布 GitHub Pages；项目不是 Jekyll 内容，需要发布构建后的静态产物。
 5. 将 GitHub Pages 地址交给用户，让父母直接打开；如需像应用一样使用，指导他们把网页添加到 Mac 程序坞。
 6. 如果用户确认拥有教材文件且允许分享，再设计受控的教材存储方式；不要默认把整套教材 PDF 放进公开 GitHub 仓库。
