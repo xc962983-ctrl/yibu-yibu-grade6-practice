@@ -10,8 +10,8 @@
 
 - `app/page.tsx`
   - 家长友好的首页和使用说明。
-  - 数学练习主题：分数、比和比例、圆与百分数。
-  - 内置 6 道示例题。
+  - 数学练习题库：分数、比和比例、圆与百分数，共 18 道内置题。
+  - 可以组合选择题库，并选择每轮练习 5、10 或 15 题。
   - 选择答案后显示正确/错误反馈、提示、逐步讲解和下一题按钮。
   - “教材中心”目前只保留语文、数学、英语三个入口。
   - 教材入口指向国家中小学智慧教育平台和 ChinaTextbook 对应目录，不把整套教材 PDF 重新公开托管。
@@ -53,14 +53,14 @@ npm run build
 ## Git / Sites 状态
 
 - 当前本地分支：`main`
-- 最近项目提交：`a5f677f`（README）和 `e45b2cc`（交接说明）；核心功能版本为 `feee052`。
+- 最近项目提交：`6c2d1e5`（刷新交接状态）；README 为 `a5f677f`，核心功能版本为 `feee052`。
 - `.openai/hosting.json` 已保存 Sites 项目配置。
 - Sites 已保存一个可部署版本，但因为当前环境不支持外部邮箱访客邀请，所以没有部署成父母可访问的私有链接。
 - GitHub 已创建公开仓库：`https://github.com/xc962983-ctrl/yibu-yibu-grade6-practice`。仓库内有 README、此交接文件和完整源文件压缩包；本地 `origin` 仍是临时 Sites 源码仓库，不要把 `byoungd/up` 当作目标仓库。
 
 ## 下一位 Codex 的建议工作顺序
 
-1. 从 GitHub 仓库下载 `yibu-yibu-grade6-practice-source.tar.gz`，解压到工作目录。
+1. 从 GitHub 仓库下载 `yibu-yibu-grade6-practice-source-v2.tar.gz`，解压到工作目录。
 2. 检查 `git status -sb` 和 `npm test`，确认交接包可运行。
 3. 如需持续开发，先把本地 `origin` 改成 GitHub 仓库地址，再按用户要求提交代码。
 4. 使用 GitHub Actions 构建并发布 GitHub Pages；项目不是 Jekyll 内容，需要发布构建后的静态产物。
